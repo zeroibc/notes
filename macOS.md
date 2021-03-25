@@ -1,10 +1,10 @@
 # macOS
 
-## [使我的macOS体验更加惊人的应用程序和工具列表](https://github.com/nikitavoloboev/my-mac-os)
+## [使我的 macOS 体验更加惊人的应用程序和工具列表](https://github.com/nikitavoloboev/my-mac-os)
 
-## [在macOS上安装开发环境](https://github.com/sb2nov/mac-setup)
+## [在 macOS 上安装开发环境](https://github.com/sb2nov/mac-setup)
 
-## [我的macOS配置文件](https://github.com/nikitavoloboev/dotfiles)
+## [我的 macOS 配置文件](https://github.com/nikitavoloboev/dotfiles)
 
 ## 命令行增强
 
@@ -265,6 +265,19 @@ uuid@3.2.1
 *   [csvkit](https://csvkit.readthedocs.io/en/1.0.3/)[26] > `awk 及其它`
 *   [noti](https://github.com/variadico/noti)[27] > `display notification`
 *   [entr](http://www.entrproject.org/)[28] > `watch`
+
+### Mac 上怎么调节 Launchpad(启动台) 的图标大小，基本就是三行终端命令
+
+``` bash
+# 先调整每列显示多少个
+$ defaults write com.apple.dock springboard-rows -int 6
+
+# 再调整每行显示多少个
+$ defaults write com.apple.dock springboard-columns -int 11
+
+# 重置一下
+$ defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
+```
 
 ### 原文链接
 
